@@ -1,9 +1,14 @@
 import "./App.css";
+import Todo from "./Todo";
 
 function App() {
+  const time = 50;
   return (
     <>
       <h1>Vite + React</h1>
+      <Todo task="learn react" isDone={true} time={time}></Todo>
+      <Todo task="Revised js" isDone={false}></Todo>
+      <Todo task="take a showerd" isDone={true}></Todo>
       <Player></Player>
       <Developer name="Nazim" tech="javascript"></Developer>
       <Developer name="jahanggir" tech="python"></Developer>
