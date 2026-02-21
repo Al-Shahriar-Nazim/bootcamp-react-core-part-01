@@ -8,6 +8,8 @@ function App() {
       <Developer name="Nazim" tech="javascript"></Developer>
       <Developer name="jahanggir" tech="python"></Developer>
       <MyFriends></MyFriends>
+      <Mobile name="infinix" prices="20000"></Mobile>
+      <Mobile name="realme" prices="30000"></Mobile>
     </>
   );
 }
@@ -51,6 +53,17 @@ function MyFriends() {
     <div style={friends}>
       <h3>First firend :Sayed</h3>
       <h3>last friend : Nai</h3>
+    </div>
+  );
+}
+
+// destructring props
+function Mobile({ name, prices }) {
+  return (
+    <div className="devo">
+      <h3>Mobile phone</h3>
+      <p>Name :{name}</p>
+      <p>Price :{prices}</p>
     </div>
   );
 }
