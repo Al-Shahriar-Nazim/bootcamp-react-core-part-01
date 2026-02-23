@@ -1,11 +1,18 @@
 import "./App.css";
+import Books from "./Books";
 import Todo from "./Todo";
 
 function App() {
   const time = 50;
+  const books = [
+    { id: 1, name: "chemistry" },
+    { id: 2, name: "Physics" },
+    { id: 3, name: "Higher math" },
+  ];
   return (
     <>
       <h1>Vite + React</h1>
+      <Books books={books}></Books>
       <Todo task="learn react" isDone={true} time={time}></Todo>
       <Todo task="Revised js" isDone={false}></Todo>
       <Todo task="take a showerd" isDone={true}></Todo>
